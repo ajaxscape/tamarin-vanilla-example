@@ -1,0 +1,35 @@
+{
+  "name": "tamarin-vanilla-example",
+  "version": "0.0.1",
+  "description": "Example using tamarin without cucumber.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaxscape/tamarin-vanilla-example.git"
+  },
+  "keywords": [
+    "tamarin",
+    "selenium",
+    "webdriver",
+    "bdd",
+    "integration"
+  ],
+  "author": "Ben Surgison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajaxscape/tamarin-vanilla-example/issues"
+  },
+  "homepage": "https://github.com/ajaxscape/tamarin-vanilla-example#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "chromedriver": "^2.25.3",
+    "selenium-webdriver": "^3.0.1",
+    "standard": "^8.6.0",
+    "tamarin": "git://github.com/ajaxscape/tamarin.git#extend-webelement",
+    "tamarin-dom-sleuth": "^0.0.4"
+  }
+}

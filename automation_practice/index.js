@@ -11,7 +11,8 @@ module.exports = {
     .then(() => world.click(homePage.masthead.signIn))
     .then(() => authenticationPage.signInTestUser())
     .then(() => world.waitFor(findText('Authentication failed.')))
+    .catch((err) => { throw err })
+    // finally
     .then(() => world.getDriver())
     .then((driver) => driver.quit())
-    .then(() => console.log('Test completed successfully'))
 }

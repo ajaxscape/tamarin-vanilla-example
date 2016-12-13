@@ -15,8 +15,12 @@ const page = {
 module.exports = {
   test: () => world.visit(url)
     .then(() => world.waitForTitle(title))
-    .then(() => world.setData('searchTerm', searchTerm))
-    .then(() => this.sendKeys(page.search, searchTerm + '\n'))
+    .then(() => world.sendKeys(page.search, searchTerm + '\n'))
     .then(() => world.click(page.navLink(linkText)))
+    .then(() => world.waitFor(page.results('Image', searchTerm)))
+    .catch((err) => { throw err })
+    // finally
+    .then(() => world.getDriver())
+    .then((driver) => driver.quit())
 }
 

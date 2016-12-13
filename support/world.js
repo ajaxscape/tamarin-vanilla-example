@@ -1,6 +1,6 @@
 'use strict'
 
-const env = require('./env')
+require('./env')
 const driver = require('./driver')
 const tamarin = require('tamarin')
   .use(require('tamarin-dom-sleuth'))
@@ -8,7 +8,7 @@ const tamarin = require('tamarin')
 module.exports = {
   World: class extends tamarin {
     constructor () {
-      super(driver)
+      super(driver())
     }
   }
 }

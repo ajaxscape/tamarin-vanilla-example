@@ -4,7 +4,7 @@
   "description": "Example using tamarin without cucumber.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",

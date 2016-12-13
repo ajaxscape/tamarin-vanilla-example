@@ -9,8 +9,8 @@ const page = {
 
 module.exports = {
   test: () => world.visit('https://www.actitime.com/')
-    .then(() => world.waitForCookie('ym_isad').should.eventually.have.property('value', 2))
-    .then(() => world.waitForCookie('ym_uid'))
+    .then(() => world.waitForCookie('_ym_isad').should.eventually.have.property('value', '2'))
+    .then(() => world.waitForCookie('_ym_uid'))
     .then(() => world.waitForTitle('actiTIME – Timesheet Software'))
     .then(() => world.whenExists(page.subMenu('Features in detail')))
     .then(() => Promise.all([

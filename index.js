@@ -6,26 +6,26 @@ Promise.all([
 
   automationPractice.test()
     .then(() =>
-      console.log('Automation practice completed successfully'))
+      console.log('\nAutomation practice completed successfully'))
     .catch((err) => {
-      console.error('Automation practice failed')
+      console.error('\nAutomation practice failed')
       throw err
     }),
 
   acitime.test()
     .then(() =>
-      console.log('Acitime completed successfully'))
+      console.log('\nAcitime completed successfully'))
     .catch((err) => {
-      console.error('Acitime failed')
+      console.error('\nAcitime failed')
       throw err
     }),
 
   googleSearch.test()
     .then(() =>
-      console.log('Google search completed successfully'))
+      console.log('\nGoogle search completed successfully'))
     .catch((err) => {
-      console.error('Google search failed')
+      console.error('\nGoogle search failed')
       throw err
     })
 
-]).then(() => console.log('Completed all tests ok'))
+]).then(() => console.log('\nCompleted all tests ok'))

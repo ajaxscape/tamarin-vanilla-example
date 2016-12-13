@@ -4,11 +4,11 @@ const googleSearch = require('./google_search')
 
 Promise.all([
 
-  automationPractice.test()
+  googleSearch.test()
     .then(() =>
-      console.log('\nAutomation practice completed successfully'))
+      console.log('\nGoogle search completed successfully'))
     .catch((err) => {
-      console.error('\nAutomation practice failed')
+      console.error('\nGoogle search failed')
       throw err
     }),
 
@@ -20,11 +20,11 @@ Promise.all([
       throw err
     }),
 
-  googleSearch.test()
+  automationPractice.test()
     .then(() =>
-      console.log('\nGoogle search completed successfully'))
+      console.log('\nAutomation practice completed successfully'))
     .catch((err) => {
-      console.error('\nGoogle search failed')
+      console.error('\nAutomation practice failed')
       throw err
     })
 

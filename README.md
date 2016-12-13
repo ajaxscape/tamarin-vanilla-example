@@ -1,2 +1,3 @@
 # tamarin-vanilla-example
-tamarin without cucumber.js
+
+npm install && npm test

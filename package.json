@@ -4,7 +4,7 @@
   "description": "Example using tamarin without cucumber.js",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node ./test/index.js"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
     "chromedriver": "^2.25.3",
     "selenium-webdriver": "^3.0.1",
     "standard": "^8.6.0",
-    "tamarin": "git://github.com/ajaxscape/tamarin.git#extend-webelement",
+    "tamarin": "^1.0.27",
     "tamarin-dom-sleuth": "^0.0.4"
   }
 }

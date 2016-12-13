@@ -3,7 +3,7 @@
 const { host, baseUrl } = require('../config')
 const url = host + baseUrl
 
-module.exports = function (world) {
+module.exports = function () {
   const page = {
     url,
     productList: { css: '.product_list' },

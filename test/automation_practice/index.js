@@ -5,6 +5,7 @@ const authenticationPage = require('./pages/authentication')(world)
 const findText = (text) => ({xpath: `//*[text()="${text}"]`})
 
 module.exports = {
+  world,
   test: () => world.visit(homePage.url)
     .then(() => world.waitFor(homePage.productContainer))
     .then(() => world.select(homePage.productList, homePage.productContainer.css).should.eventually.have.lengthOf(7))

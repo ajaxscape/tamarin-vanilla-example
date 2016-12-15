@@ -13,6 +13,7 @@ const page = {
 }
 
 module.exports = {
+  world,
   test: () => world.visit(url)
     .then(() => world.waitForTitle(title))
     .then(() => world.sendKeys(page.search, searchTerm + '\n'))

@@ -13,7 +13,7 @@ module.exports = {
     .then(() => world.waitForCookie('_ym_isad').should.eventually.have.property('value', '2'))
     .then(() => world.waitForCookie('_ym_uid'))
     .then(() => world.waitForTitle('actiTIME – Timesheet Software'))
-    .then(() => world.whenExists(page.subMenu('Features in detailx')))
+    .then(() => world.whenExists(page.subMenu('Features in detail')))
     .then(() => Promise.all([
       world.hover(page.menu('Features'), 500),
       world.click(page.subMenu('Features in detail'))
